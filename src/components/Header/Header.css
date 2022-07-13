@@ -37,3 +37,8 @@ header .container{
 
     color: #333;
 }
+
+.header__links img{
+    width: 24px;
+    aspect-ratio: 1;
+}

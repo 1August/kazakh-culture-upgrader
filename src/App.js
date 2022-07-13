@@ -6,6 +6,8 @@ import { Header } from "./components/Header/Header";
 import { GamePage } from "./pages/GamePage/GamePage";
 import { useId, useState } from "react";
 import StartPage from "./pages/StartPage/StartPage";
+import {AboutPage} from "./pages/AboutPage/AboutPage";
+import {Footer} from "./components/Footer/Footer";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -118,9 +120,13 @@ function App() {
               path="/game"
               element={<GamePage data={data} openThisCard={openThisCard} />}
             />
+            <Route
+              path={'about'}
+              element={<AboutPage/>}
+            />
           </Routes>
         </main>
-        {/*<Footer/>*/}
+        <Footer/>
       </div>
     </BrowserRouter>
   );

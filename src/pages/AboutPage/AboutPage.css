@@ -1,0 +1,23 @@
+.aboutPage .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.aboutPage .container h1{
+    font-size: 2rem;
+}
+
+.aboutPage .container p{
+    display: grid;
+    place-items: center;
+}
+
+.aboutPage .container a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+
+    display: flex;
+    gap: .5rem;
+}
