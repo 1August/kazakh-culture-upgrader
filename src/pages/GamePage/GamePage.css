@@ -1,0 +1,48 @@
+.gamePage{
+    padding: 4rem 0;
+}
+
+.gamePage .container{
+    /*display: flex;*/
+    /*place-items: center;*/
+}
+
+.game{
+    width: 50%;
+
+    margin: 0 auto;
+}
+
+.game__gridTable{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.game__gridItem{
+    cursor: pointer;
+
+    aspect-ratio: 1;
+
+    background-color: #333;
+    border: 1px solid #fafafa;
+
+    display: grid;
+    place-items: center;
+
+    font-size: 5rem;
+    color: #fff;
+
+    user-select: none;
+
+    box-shadow: .5rem .5rem 10px rgba(0, 0 , 0, .15);
+
+}
+
+
+.game__gridItem:hover{
+    background-color: #494949;
+}

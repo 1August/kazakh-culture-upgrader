@@ -1,0 +1,41 @@
+.modal{
+    backdrop-filter: blur(10px);
+
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    place-items: center;
+}
+
+.modal__close{
+    position: fixed;
+    right: calc(5vw + 5rem);
+    top: calc(2% + 2rem);
+
+    cursor: pointer;
+}
+
+.modal__close img{
+    width: 24px;
+}
+
+.modal__body{
+    max-height: 80vh;
+    max-width: 70vw;
+
+
+    background-color: #fff;
+
+    padding: 2rem 1rem;
+    margin: 0 auto;
+
+    box-shadow: 1rem 1rem 15px rgba(0, 0, 0, .15), inset -.25rem -.25rem 10px rgba(0, 0, 0, .15), inset .25rem .25rem 10px rgba(255, 255, 255, .15);
+    border: 1px solid #333;
+
+    text-align: center;
+}
+
+/*.modal__body h1{*/
+/*    text-align: center;*/
+/*}*/
