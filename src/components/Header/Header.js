@@ -1,21 +1,23 @@
 import './Header.css'
 
 import logo from '../../assets/img/logo.png'
+import {NavLink} from 'react-router-dom'
+
 
 export const Header = props => {
-    return(
+    return (
         <header id="header" className="header">
             <div className="container">
                 <div className="header__logo">
-                    <a href="#">
-                        <img src={logo} alt="Logo"/>
-                    </a>
+                    <NavLink to="/">
+                        <img src={logo} alt="Logo" />
+                    </NavLink>
                 </div>
                 <nav className="header__links">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Game</a></li>
-                        <li><a href="">Help</a></li>
+                        <li><NavLink to='/'>Home</NavLink></li>
+                        {/* <li><NavLink to='/game'>Game</NavLink></li> */}
+                        <li><NavLink to='/about'>About</NavLink></li>
                     </ul>
                 </nav>
             </div>

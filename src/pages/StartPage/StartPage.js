@@ -4,15 +4,23 @@ import './StartPage.css'
 
 export default function StartPage() {
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
+
+    const handlehome = () =>{
+        navigate("/")
+    }
+
+    const handlegame = () =>{
+        navigate("/game")
+    }
 
     return(
         <section id='startPage' className='startPage'>
             <div className='container'>
                 <div className='contentStart'>
-                    <h1 className='mainText'>Salem</h1>
+                    <h1 className='mainText'>SanDyq</h1>
                     <button className='button' 
-                    // onClick={navigate('/game')}
+                    onClick={() => {navigate("/game")}}
                     >Bastau</button>
                 </div>
             </div>

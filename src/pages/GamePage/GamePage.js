@@ -23,7 +23,9 @@ export const GamePage = props => {
                                     className="game__gridItem"
                                     onClick={e => openThisCard(el)}
                                 >
+                                    <span>
                                     {el.label}
+                                    </span>
                                 </div>
                             ))
                         }
