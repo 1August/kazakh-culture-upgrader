@@ -1,3 +1,6 @@
+import ReactDOM from "react-dom/client";
+import {BrowserRouter, Routes, Route, } from "react-router-dom";
+
 import './App.css'
 import {Modal} from "./components/Modal/Modal";
 import {Header} from "./components/Header/Header";

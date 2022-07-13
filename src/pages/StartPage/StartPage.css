@@ -1,0 +1,27 @@
+.contentStart{
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainText{
+    font-size: 85px;
+    font-weight: 700;
+}
+
+.button{
+    cursor: pointer;
+    /* box-shadow: 0.31vw 0.31vw 1.5vw rgb(0 81 255 / 30%); */
+    border: none;
+    border-radius: 1.4vw;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
